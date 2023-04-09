@@ -13,12 +13,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="student2")
+@Table(name="stdtab")
 public class Student2 {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int sid;
@@ -26,7 +28,7 @@ public class Student2 {
 	
 	@ManyToOne
 	@JoinColumn(name="bidFK")
-	private Book2 book;
+	private Book book;
 
 
 }

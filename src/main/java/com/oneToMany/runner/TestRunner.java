@@ -11,6 +11,8 @@ import com.oneToMany.model.Student;
 import com.oneToMany.repository.StudentRepository;
 import com.oneToMany.repository.bookRepository;
 
+
+
 @Component
 public class TestRunner implements CommandLineRunner {
 	
@@ -20,6 +22,7 @@ public class TestRunner implements CommandLineRunner {
 	private bookRepository bRepo;
 
 	@Override
+	//@PostConstruct
 	public void run(String... args) throws Exception {
 		
 		Book b = new Book(1, "Advance Java");
