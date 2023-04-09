@@ -23,7 +23,7 @@ public class Student2 {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int sid;
+	private long sid;
 	private String sname;
 	
 	@ManyToOne
